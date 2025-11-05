@@ -43,7 +43,7 @@ class Chocolate extends ExtraDecorador{
 }
 public class BebidaMain {
     public static void main(String[] args) {
-        Bebida miCafe = new Chocolate(new Leche (new Cafe())); //Cafe con leche y chocolate
+        Bebida miCafe = new Chocolate(new Crema (new Cafe())); //Cafe con leche y chocolate
         System.out.println("El costo de su bebida es: " + miCafe.costo());
     }
 }
