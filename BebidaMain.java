@@ -27,7 +27,7 @@ class Crema extends ExtraDecorador{
     public Crema (Bebida bebida){
         super(bebida);
     }
-    @Ovierride
+    @Override
     public double costo(){
         return bebida.costo() + 700; //Agrega el precio de la variacion (cafe con crema)
     }
@@ -36,7 +36,7 @@ class Chocolate extends ExtraDecorador{
     public Chocolate (Bebida bebida){
         super(bebida);
     }
-    @Overrride
+    @Override
     public double costo(){
         return bebida.costo() + 1000; //Agrega el precio de la variacion (cafe con chocolate)
     }
