@@ -44,20 +44,20 @@ class CuentaBanco extends Subject {
 class NotificacionApp implements observador{
     @Override
     public void actualizarSaldo(double saldo){
-        System.out.println("[NequiApp] Tu nuevo saldo es: $"  + saldo);
+        System.out.println("[NequiApp] Geiler Andres Tu nuevo saldo es: $"  + saldo);
     }
 }
 class NotificacionCorreo implements observador{
     @Override
     public void actualizarSaldo(double saldo){
-        System.out.println("[GmailApp] Registro: Tu nuevo saldo es: $"  + saldo);
+        System.out.println("[GmailApp] Registro de actualizacion en Nequi: Tu nuevo saldo es: $"  + saldo);
     }
 }
 
 class NotificacionSMS implements observador{
     @Override
     public void actualizarSaldo(double saldo){
-        System.out.println("[SMSApp] Registro: Tu nuevo saldo es: $"  + saldo);
+        System.out.println("[SMSApp] +57: **Mensajeria**  Tu nuevo saldo es: $"  + saldo);
     }
 }
 public class MainBanco{
