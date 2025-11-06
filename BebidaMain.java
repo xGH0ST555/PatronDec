@@ -41,15 +41,7 @@ class Chocolate extends ExtraDecorador{
         return bebida.costo() + 1000; //Agrega el precio de la variacion (cafe con chocolate)
     }
 }
-class Canela extends ExtraDecorador{
-    public Canela (Bebida bebida){
-        super(bebida);
-    }
-    @Override
-    public double costo(){
-        return bebida.costo() + 1000; //Agrega el precio de la variacion (cafe con Canela)
-    }
-}
+
 public class BebidaMain {
     public static void main(String[] args) {
         Bebida miCafe = new Chocolate(new Crema (new Cafe())); //Cafe con leche y chocolate
